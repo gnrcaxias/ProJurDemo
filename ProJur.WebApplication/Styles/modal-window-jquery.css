@@ -1,0 +1,104 @@
+﻿ 
+#mask
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9000;
+    background-color: #666666;
+    display: none;
+}
+
+#boxes
+{
+    
+}
+
+#boxes .janela
+{
+    background-color: #FFFFFF;
+    border: 1px solid #4B4B4D;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:440px;
+    display:none;
+    z-index:9999;
+}
+
+#janelaModalCorpo
+{
+    margin: 15px;
+}
+
+#janelaModalCorpo #descricao
+{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.close
+{
+    display: block;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+#janelaModalCabecalho
+{
+    background-color: #7395d1;
+    border-bottom: 1px solid #4B4B4D;
+    border-bottom-color: #757577;
+}
+
+#janelaModalCabecalho table tr td:last-child
+{
+    white-space: nowrap; 
+    font-size: 14px; 
+    font-weight:bold; 
+    width: 100%; 
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#janelaModalRodape
+{
+    padding: 7px;
+    background-color: #F2F2F2;
+    border-top: 1px solid #848688;
+    border-top-color: #D0D1D2;
+}
+
+#janelaModalRodape table tr td
+{
+    text-align: right;
+}
+
+#janelaModalRodape table tr td:first-child
+{
+    width: 100%;
+}
+
+
+#boxes .ValidationSummary
+{
+    padding: 15px;
+    color: #ED3237;
+    background: #FFEBE8;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-top-color: #D17376;
+    border-bottom-color: #D17376;
+}
+
+#boxes .ValidationSummary ul 
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    list-style: square;
+}

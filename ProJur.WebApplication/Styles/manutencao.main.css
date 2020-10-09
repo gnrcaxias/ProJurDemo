@@ -1,0 +1,182 @@
+﻿
+@import url("../Objects/detailsview.css");
+
+.manutencaoFieldHeader
+{
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#manutencaoTituloSecao
+{
+    margin: 30px 10px 0px 10px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #373435;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    color: #4B4B4D;
+}
+
+.manutencaoTituloSecao
+{
+    margin: 30px 10px 0px 10px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #7397d1;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-size: 11px;
+    color: #d17373;
+    /*color: #ED3237; SEGUNDA OPÇÃO DE COR */
+}
+
+#manutencaoCorpoSecao
+{   
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;   
+    margin-bottom: 20px;   
+}
+
+.manutencaoCorpoSecao
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;   
+    margin-bottom: 20px;  
+}
+
+
+#manutencaoAcoes
+{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #7397d1;
+}
+
+#manutencaoAcoes ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+#manutencaoAcoes ul li
+{
+    border: 1px dotted #FFFFFF;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#manutencaoAcoes ul li:hover
+{
+    border: 1px dotted #B2B2B2;
+    background-color: #D6D6D6;
+}
+
+#manutencaoAcoesTituloModo
+{
+    float: right; 
+    margin-top: 25px;
+    font-size: 9px;
+    color: #727376;
+    padding-right: 15px;
+}
+
+.boxResultados
+{
+  margin-left: 10px;
+  margin-right: 10px;    
+  margin-top: 15px;
+}
+
+.boxOpcoes {
+  background-color: #F1F1F2;
+  border: 1px solid #BDBFC1;
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 10px;
+  display: block;
+}
+
+
+.boxOpcoes label.titulo
+{
+    font-size: 10px;
+    color: #373435;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+
+.boxOpcoes > table:first-child
+{
+    margin-top: 0px;
+}
+
+
+.boxOpcoes > table 
+{
+    margin-top: 20px;
+}
+
+
+.boxOpcoes > table > thead > tr > th
+{
+    white-space: nowrap;
+    text-align:left;
+    font-weight: normal; 
+}
+
+
+.boxOpcoes > table > tbody > tr > td
+{
+    white-space: nowrap;
+}
+
+
+.boxOpcoes ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.boxOpcoes ul li
+{
+    border: 1px dotted #f1f1f2;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.boxOpcoes ul li:hover
+{
+    border: 1px dotted #959698;
+    background-color: #D6D6D6;
+}
+
+
+
+#listaDataVigenciaDisponivel {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+
+#listaDataVigenciaDisponivel li {
+    padding: 5px;
+}

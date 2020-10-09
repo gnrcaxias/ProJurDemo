@@ -1,0 +1,95 @@
+﻿body
+{
+    background-color: #F1F1F2;
+}
+
+.boxLogin
+{
+    background-color: #FFFFFF;
+    border: 1px solid #4B4B4D;
+    width: 440px;
+    position:absolute;
+    z-index: 9999;
+}
+
+.boxLogin #Header
+{
+    background-color: #9c463f;
+    /*background-color: #7395d1;*/
+    border-bottom: 1px solid #4B4B4D;
+    border-bottom-color: #757577;    
+}
+
+.boxLogin #Header table tr td:last-child
+{
+    white-space: nowrap; 
+    font-size: 14px; 
+    font-weight:bold; 
+    width: 100%; 
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.boxLogin #Body
+{
+    margin: 15px;
+}
+
+.boxLogin #Body #descricao
+{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.boxLogin #Footer
+{
+    padding: 14px;
+    background-color: #F2F2F2;
+    border-top: 1px solid #848688;
+    border-top-color: #D0D1D2;   
+}
+
+.boxLogin #Footer table tr td
+{
+    text-align: right;
+}
+
+.boxLogin #Footer table tr td:first-child
+{
+    width: 100%;
+}
+
+
+#mask
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9000;
+    background-color: #666666;
+    display: none;
+}
+
+
+.boxLogin .ValidationSummary
+{
+    padding: 15px;
+    color: #ED3237;
+    background: #FFEBE8;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-top-color: #D17376;
+    border-bottom-color: #D17376;
+}
+
+.boxLogin .ValidationSummary ul 
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    list-style: square;
+}

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50F343C6-B050-4B48-9FEB-A7187FD1517D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProJur.Business</RootNamespace>
+    <AssemblyName>ProJur.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bll\bllAgendaCompromisso.cs" />
+    <Compile Include="Bll\bllAgendaHibrida.cs" />
+    <Compile Include="Bll\bllAgendaUsuario.cs" />
+    <Compile Include="Bll\bllAreaProcessual.cs" />
+    <Compile Include="Bll\bllAtendimento.cs" />
+    <Compile Include="Bll\bllBackup.cs" />
+    <Compile Include="Bll\bllBackupConfiguracaoFTP.cs" />
+    <Compile Include="Bll\bllCategoriaPeca.cs" />
+    <Compile Include="Bll\bllCidade.cs" />
+    <Compile Include="Bll\bllComarca.cs" />
+    <Compile Include="Bll\bllDataTable.cs" />
+    <Compile Include="Bll\bllEstado.cs" />
+    <Compile Include="Bll\bllFaseProcessual.cs" />
+    <Compile Include="Bll\bllInstancia.cs" />
+    <Compile Include="Bll\bllMenu.cs" />
+    <Compile Include="Bll\bllPessoa.cs" />
+    <Compile Include="Bll\bllPessoaSocio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bll\bllProcesso.cs" />
+    <Compile Include="Bll\bllProcessoAdvogado.cs" />
+    <Compile Include="Bll\bllProcessoAndamento.cs" />
+    <Compile Include="Bll\bllProcessoApenso.cs" />
+    <Compile Include="Bll\bllProcessoDespesa.cs" />
+    <Compile Include="Bll\bllProcessoParte.cs" />
+    <Compile Include="Bll\bllProcessoPeca.cs" />
+    <Compile Include="Bll\bllProcessoPrazo.cs" />
+    <Compile Include="Bll\bllProcessoPrazoResponsavel.cs" />
+    <Compile Include="Bll\bllProcessoTerceiro.cs" />
+    <Compile Include="Bll\bllSituacaoProcesso.cs" />
+    <Compile Include="Bll\bllTarefa.cs" />
+    <Compile Include="Bll\bllTipoAcao.cs" />
+    <Compile Include="Bll\bllTipoPrazoProcessual.cs" />
+    <Compile Include="Bll\bllUsuarioPermissao.cs" />
+    <Compile Include="Bll\bllUsuario.cs" />
+    <Compile Include="Bll\bllVara.cs" />
+    <Compile Include="Dto\dtoAgendaHibrida.cs" />
+    <Compile Include="Dto\dtoAtendimento.cs" />
+    <Compile Include="Dto\dtoBackup.cs" />
+    <Compile Include="Dto\dtoBackupConfiguracaoFTP.cs" />
+    <Compile Include="Dto\dtoPessoaSocio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dto\dtoProcessoPeca.cs" />
+    <Compile Include="Dto\dtoAgendaCompromisso.cs" />
+    <Compile Include="Dto\dtoAgendaUsuario.cs" />
+    <Compile Include="Dto\dtoAreaProcessual.cs" />
+    <Compile Include="Dto\dtoCategoriaPeca.cs" />
+    <Compile Include="Dto\dtoCidade.cs" />
+    <Compile Include="Dto\dtoComarca.cs" />
+    <Compile Include="Dto\dtoEstado.cs" />
+    <Compile Include="Dto\dtoFaseProcessual.cs" />
+    <Compile Include="Dto\dtoInstancia.cs" />
+    <Compile Include="Dto\dtoListItem.cs" />
+    <Compile Include="Dto\dtoMenu.cs" />
+    <Compile Include="Dto\dtoPessoa.cs" />
+    <Compile Include="Dto\dtoProcessoPrazoResponsavel.cs" />
+    <Compile Include="Dto\dtoProcessoTerceiro.cs" />
+    <Compile Include="Dto\dtoProcesso.cs" />
+    <Compile Include="Dto\dtoProcessoAdvogado.cs" />
+    <Compile Include="Dto\dtoProcessoAndamento.cs" />
+    <Compile Include="Dto\dtoProcessoApenso.cs" />
+    <Compile Include="Dto\dtoProcessoDespesa.cs" />
+    <Compile Include="Dto\dtoProcessoParte.cs" />
+    <Compile Include="Dto\dtoProcessoPrazo.cs" />
+    <Compile Include="Dto\dtoSituacaoProcesso.cs" />
+    <Compile Include="Dto\dtoTarefa.cs" />
+    <Compile Include="Dto\dtoTipoAcao.cs" />
+    <Compile Include="Dto\dtoTipoPrazoProcessual.cs" />
+    <Compile Include="Dto\dtoUsuarioPermissao.cs" />
+    <Compile Include="Dto\dtoUsuario.cs" />
+    <Compile Include="Dto\dtoVara.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\InfoVillage\InfoVillage.DevLibrary\InfoVillage.DevLibrary.csproj">
+      <Project>{06ba0cb1-4620-4421-aa15-fd8e4ba37b55}</Project>
+      <Name>InfoVillage.DevLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProJur.DataAccess\ProJur.DataAccess.csproj">
+      <Project>{9c427671-8c7e-423d-8105-0c8d26c310c9}</Project>
+      <Name>ProJur.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

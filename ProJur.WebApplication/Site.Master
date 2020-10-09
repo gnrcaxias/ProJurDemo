@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ProJur.WebApplication.Site" %>
+<%@ Register src="Controls/menuEsquerdaPrincipal.ascx" tagname="menuEsquerdaPrincipal" tagprefix="ProJur" %>
+<%@ Register src="Controls/menuCabecalhoPrincipal.ascx" tagname="menuCabecalhoPrincipal" tagprefix="ProJur" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    
+    <title>RCA PROJUR</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon/favicon-16x16.png?28042019" />
+
+    <script src="<%= ProJur.DataAccess.Configuracao.getEnderecoVirtualSite() %>/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <%--<script src="<%= ProJur.DataAccess.Configuracao.getEnderecoVirtualSite() %>/Scripts/jquery-ui-1.8.20.custom.min.js" type="text/javascript"></script>--%>
+    <script src="<%= ProJur.DataAccess.Configuracao.getEnderecoVirtualSite() %>/Scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="<%= ProJur.DataAccess.Configuracao.getEnderecoVirtualSite() %>/Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <script src="<%= ProJur.DataAccess.Configuracao.getEnderecoVirtualSite() %>/Scripts/jquery.caret.js" type="text/javascript"></script>
+    <script src="<%= ProJur.DataAccess.Configuracao.getEnderecoVirtualSite() %>/Scripts/jquery.mask.min.js" type="text/javascript"></script>
+
+    <link href="~/Styles/jquery-themes/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Styles/principal.main.css?12062015" rel="stylesheet" type="text/css" />
+
+    <link href="~/Styles/default.main.css?12062015" rel="stylesheet" type="text/css" />
+    <script src="<%= ProJur.DataAccess.Configuracao.getEnderecoVirtualSite() %>/Scripts/default.main.js?071120141121" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body onload="LoadjQueryDefaults()">
+
+    <form id="form1" runat="server">
+
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" >
+        </ajaxToolkit:ToolkitScriptManager>
+
+        <div id="mask"  style="display: none"></div>
+
+        <div id="paginaPrincipal">
+
+            <div id="cabecalhoPrincipal">
+                <ProJur:menuCabecalhoPrincipal ID="menuCabecalhoPrincipal1" runat="server" />
+            </div>
+
+
+
+            <br />
+
+            <div id="menuPrincipal">
+                <ProJur:menuEsquerdaPrincipal ID="menuEsquerdaPrincipal1" runat="server" />
+            </div>
+            
+            <div id="corpoConteudo">
+
+                <div id="siteMapPrincipal">
+                    <table width="100%" height="100%">
+                        <tr>
+                            <td valign="bottom">
+                                <div id="siteMapTitulo">
+                                    Você está em:
+                                </div>
+                                <div id="siteMapMapa">          
+                                    <table>
+                                        <tr>
+                                            <td style="color: #727376; white-space:nowrap;">
+                                                <asp:Literal ID="litCaminhoPrincipal" runat="server"></asp:Literal></td>
+                                            <td style="color: #d17373; width:100%;  white-space:nowrap;">
+                                                <asp:Literal ID="litCaminhoSecundario" runat="server"></asp:Literal></td>
+                                        </tr>
+                                    </table>                                                             
+<%--                                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" ParentLevelsDisplayed="2">
+                                        <CurrentNodeStyle ForeColor="#d17373" />
+                                        <NodeStyle ForeColor="#727376" />
+                                        <PathSeparatorStyle ForeColor="#727376" />
+                                        <RootNodeStyle Font-Bold="False" ForeColor="#727376" />
+                                    </asp:SiteMapPath>--%>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+                </asp:ContentPlaceHolder>   
+                 
+            </div>
+
+        </div>
+
+        <div style="clear:both">
+            
+        </div>
+
+        <br />
+        <br />
+        <div id="rodapePrincipal">XPIRALL SOFTWARE - TODOS OS DIREITOS RESERVADOS - 2015</div>
+
+    </form>
+        
+    <script type="text/javascript">
+        $(function () {
+            $('.campoData').mask('00/00/0000');
+            $('.campoCPF').mask('000.000.000-00');
+            $('.campoCNPJ').mask('00.000.000/0000-00');
+            $('.campoCEP').mask('00000-000');
+            $('.campoTelefone').mask('(00) 0000-00000');
+            $('.campoDecimal').mask('000.000.000.000.000,00', { reverse: true });
+            //$('.campoDecimal').mask('000.000.000.000.000,00', { reverse: true });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+﻿.GridView
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.GridView tr
+{
+    border-bottom-style: Dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #BDBFC1;    
+}
+
+.GridView tr.Highlight
+{
+    border-bottom-style: Dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #BDBFC1;
+    background-color: #f6e5e3;
+}
+
+.GridView tr:first-child
+{
+    border-bottom-style: Dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #BDBFC1;    
+    border-top-style: Dotted;
+    border-top-width: 1px;
+    border-top-color: #BDBFC1;  
+}
+
+.GridView tr:last-child
+{
+    border-bottom-style: Dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #BDBFC1;    
+}
+
+.GridView tbody tr td
+{
+    padding: 6px;
+}
+
+.GridView tbody tr th
+{
+    padding: 6px;
+}
+
+.GridViewHeaderDescendingSort
+{
+    background-image: url('../../Images/seta-decrescente.gif');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #E0E0E0;
+}
+
+.GridViewHeaderAscendingSort
+{
+    background-image: url('../../Images/seta-crescente.gif');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #E0E0E0;
+}
+
+.GridView tbody tr td table tbody tr td
+{
+    padding: 2px;
+}
+
+.GridView tbody tr td table tbody tr td a
+{
+    background-color: #F5F5F5;
+    border: 1px solid #D6D6D6;
+    color: #0072BC;
+    font-weight: normal;
+    padding: 2px 7px;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.GridView tbody tr td table tbody tr td span
+{
+    background-color: #DDEEFF;
+    border: 1px solid #BBDDFF;
+    color: #0072BC;
+    cursor: default;
+    padding: 2px 7px;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.GridView .botaoAcao
+{
+    border: 1px dotted #f1f1f2;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.GridView .botaoAcao:hover
+{
+    border: 1px dotted #959698;
+    background-color: #D6D6D6;
+}
+
+.botaoAcaoCadastro
+{
+    border: 1px dotted #f1f1f2;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.botaoAcaoCadastro:hover
+{
+    border: 1px dotted #959698;
+    background-color: #D6D6D6;
+}

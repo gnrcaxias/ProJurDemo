@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C194AFE0-DFF9-454E-A536-130D908278EB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProJur.WebApplication</RootNamespace>
+    <AssemblyName>ProJur.WebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\dialogEdicaoProcessoAdvogado.ascx" />
+    <Content Include="Controls\dialogSelecaoPessoa.ascx" />
+    <Content Include="Controls\dialogSelecaoProcesso.ascx" />
+    <Content Include="Controls\dialogSelecaoUsuario.ascx" />
+    <Content Include="Controls\menuAcoesSubManutencao.ascx" />
+    <Content Include="favicon\favicon-16x16.png" />
+    <Content Include="favicon\_favicon-16x16.png" />
+    <Content Include="favicon\___favicon-16x16.png" />
+    <Content Include="Images\anexo.png" />
+    <Content Include="Images\calendar-check.png" />
+    <Content Include="Images\Comandos-Small\24settings_file.png" />
+    <Content Include="Images\Comandos-Small\adicionar-prazo.png" />
+    <Content Include="Images\Comandos-Small\adicionar-registro.png" />
+    <Content Include="Images\Comandos-Small\adicionar-usuario.png" />
+    <Content Include="Images\Comandos-Small\configuracao.png" />
+    <Content Include="Images\Comandos-Small\imprimir.png" />
+    <Content Include="Images\Comandos-Small\remover-registro.png" />
+    <Content Include="Images\Comandos-Small\remover-usuario.png" />
+    <Content Include="Images\Comandos\Voltar.png" />
+    <Content Include="Images\home_projur.png" />
+    <Content Include="Images\rca-logotipo-projur-original.png" />
+    <Content Include="Images\rca-logotipo-projur.png" />
+    <Content Include="Images\rca-marca-dagua.png" />
+    <Content Include="Images\rca-transparente.png" />
+    <Content Include="Paginas\Cadastro\Agenda.aspx" />
+    <Content Include="Paginas\Cadastro\AreaProcessual.aspx" />
+    <Content Include="Paginas\Cadastro\Atendimento.aspx" />
+    <Content Include="Paginas\Cadastro\Backup.aspx" />
+    <Content Include="Paginas\Cadastro\CategoriaPeca.aspx" />
+    <Content Include="Paginas\Cadastro\Cidade.aspx" />
+    <Content Include="Paginas\Cadastro\Comarca.aspx" />
+    <Content Include="Paginas\Cadastro\Estado.aspx" />
+    <Content Include="Paginas\Cadastro\FaseProcessual.aspx" />
+    <Content Include="Paginas\Cadastro\Instancia.aspx" />
+    <Content Include="Paginas\Cadastro\Pessoa.aspx" />
+    <Content Include="Paginas\Cadastro\Processo.aspx" />
+    <Content Include="Paginas\Cadastro\SituacaoProcesso.aspx" />
+    <Content Include="Paginas\Cadastro\Tarefa.aspx" />
+    <Content Include="Paginas\Cadastro\TipoAcao.aspx" />
+    <Content Include="Paginas\Cadastro\TipoPrazoProcessual.aspx" />
+    <Content Include="Paginas\Cadastro\Vara.aspx" />
+    <Content Include="Paginas\Manutencao\AgendaCompromisso.aspx" />
+    <Content Include="Paginas\Manutencao\AreaProcessual.aspx" />
+    <Content Include="Paginas\Manutencao\Atendimento.aspx" />
+    <Content Include="Paginas\Manutencao\BackupConfiguracaoFTP.aspx" />
+    <Content Include="Paginas\Manutencao\CategoriaPeca.aspx" />
+    <Content Include="Paginas\Manutencao\Cidade.aspx" />
+    <Content Include="Paginas\Manutencao\Comarca.aspx" />
+    <Content Include="Paginas\Manutencao\Estado.aspx" />
+    <Content Include="Paginas\Manutencao\FaseProcessual.aspx" />
+    <Content Include="Paginas\Manutencao\Instancia.aspx" />
+    <Content Include="Paginas\Manutencao\Pessoa.aspx" />
+    <Content Include="Paginas\Manutencao\PessoaSocio.aspx" />
+    <Content Include="Paginas\Manutencao\Processo.aspx" />
+    <Content Include="Paginas\Manutencao\ProcessoAdvogado.aspx" />
+    <Content Include="Paginas\Manutencao\ProcessoAndamento.aspx" />
+    <Content Include="Paginas\Manutencao\ProcessoDespesa.aspx" />
+    <Content Include="Paginas\Manutencao\ProcessoParte.aspx" />
+    <Content Include="Paginas\Manutencao\ProcessoPeca.aspx" />
+    <Content Include="Paginas\Manutencao\ProcessoPrazo.aspx" />
+    <Content Include="Paginas\Manutencao\ProcessoTerceiro.aspx" />
+    <Content Include="Paginas\Manutencao\SituacaoProcesso.aspx" />
+    <Content Include="Paginas\Manutencao\Tarefa.aspx" />
+    <Content Include="Paginas\Manutencao\TipoAcao.aspx" />
+    <Content Include="Paginas\Manutencao\TipoPrazoProcessual.aspx" />
+    <Content Include="Paginas\Manutencao\Vara.aspx" />
+    <Content Include="plesklib.aspx" />
+    <Content Include="Reports\CarregarRelatorio.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.mask.min.js" />
+    <Content Include="Scripts\__jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="Site.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\dialogNovaSenha.ascx" />
+    <Content Include="Controls\menuAcoesCadastro.ascx" />
+    <Content Include="Controls\menuAcoesManutencao.ascx" />
+    <Content Include="Controls\menuCabecalhoPrincipal.ascx" />
+    <Content Include="Controls\menuEsquerdaPrincipal.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\aceitar.png" />
+    <Content Include="Images\add-item-18.png" />
+    <Content Include="Images\add-item-24.png" />
+    <Content Include="Images\add-item.png" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\atendimento.png" />
+    <Content Include="Images\AvisoRed.gif" />
+    <Content Include="Images\Comandos-Small\adicionar-item.png" />
+    <Content Include="Images\Comandos-Small\cancelar.png" />
+    <Content Include="Images\Comandos-Small\duplicar-item.png" />
+    <Content Include="Images\Comandos-Small\editar.png" />
+    <Content Include="Images\Comandos-Small\remover.png" />
+    <Content Include="Images\Comandos-Small\salvar.png" />
+    <Content Include="Images\Comandos\Adicionar.png" />
+    <Content Include="Images\Comandos\Atualizar.png" />
+    <Content Include="Images\Comandos\Cancelar.png" />
+    <Content Include="Images\Comandos\Editar.png" />
+    <Content Include="Images\Comandos\Excluir.png" />
+    <Content Include="Images\Comandos\Imprimir.png" />
+    <Content Include="Images\Comandos\Novo.png" />
+    <Content Include="Images\Comandos\Pesquisar.png" />
+    <Content Include="Images\Comandos\Remover.png" />
+    <Content Include="Images\Comandos\Salvar.png" />
+    <Content Include="Images\configuracoes.png" />
+    <Content Include="Images\executar.png" />
+    <Content Include="Images\janela-pesquisar.png" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\logotipoFinanco.gif" />
+    <Content Include="Images\menuPrincipal.png" />
+    <Content Include="Images\Pesquisar.png" />
+    <Content Include="Images\remove-item-18.png" />
+    <Content Include="Images\remove-item-24.png" />
+    <Content Include="Images\remove-item.png" />
+    <Content Include="Images\sair.png" />
+    <Content Include="Images\separadorBarraCabecalho.png" />
+    <Content Include="Images\seta-crescente.gif" />
+    <Content Include="Images\seta-decrescente.gif" />
+    <Content Include="Images\Visualizar.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Paginas\Cadastro\Menu.aspx" />
+    <Content Include="Paginas\Cadastro\Usuario.aspx" />
+    <Content Include="Paginas\Manutencao\Menu.aspx" />
+    <Content Include="Paginas\Manutencao\Usuario.aspx" />
+    <Content Include="Scripts\default.main.js" />
+    <Content Include="Scripts\detailsview.js" />
+    <Content Include="Scripts\gridview.js" />
+    <Content Include="Scripts\jquery-1.11.2.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\login.main.js" />
+    <Content Include="Scripts\modal-window-jquery.js" />
+    <Content Include="Styles\cadastro.main.css" />
+    <Content Include="Styles\default.main.css" />
+    <Content Include="Styles\detailsview.css" />
+    <Content Include="Styles\gridview.css" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_glass_65_ffebe8_1x400.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_highlight-soft_25_ffebe8_1x100.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-bg_loop_50_ffffff_21x21.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_666666_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\jquery-themes\smoothness\jquery-ui-1.8.20.custom.css" />
+    <Content Include="Styles\jquery.multiselect.css" />
+    <Content Include="Styles\login.main.css" />
+    <Content Include="Styles\manutencao.main.css" />
+    <Content Include="Styles\modal-window-jquery.css" />
+    <Content Include="Styles\modal-window.css" />
+    <Content Include="Styles\portal.main.css" />
+    <Content Include="Styles\principal.main.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\dialogEdicaoProcessoAdvogado.ascx.cs">
+      <DependentUpon>dialogEdicaoProcessoAdvogado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\dialogEdicaoProcessoAdvogado.ascx.designer.cs">
+      <DependentUpon>dialogEdicaoProcessoAdvogado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\dialogSelecaoPessoa.ascx.cs">
+      <DependentUpon>dialogSelecaoPessoa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\dialogSelecaoPessoa.ascx.designer.cs">
+      <DependentUpon>dialogSelecaoPessoa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\dialogSelecaoProcesso.ascx.cs">
+      <DependentUpon>dialogSelecaoProcesso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\dialogSelecaoProcesso.ascx.designer.cs">
+      <DependentUpon>dialogSelecaoProcesso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\dialogSelecaoUsuario.ascx.cs">
+      <DependentUpon>dialogSelecaoUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\dialogSelecaoUsuario.ascx.designer.cs">
+      <DependentUpon>dialogSelecaoUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\dialogNovaSenha.ascx.cs">
+      <DependentUpon>dialogNovaSenha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\dialogNovaSenha.ascx.designer.cs">
+      <DependentUpon>dialogNovaSenha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\menuAcoesCadastro.ascx.cs">
+      <DependentUpon>menuAcoesCadastro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menuAcoesCadastro.ascx.designer.cs">
+      <DependentUpon>menuAcoesCadastro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\menuAcoesManutencao.ascx.cs">
+      <DependentUpon>menuAcoesManutencao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menuAcoesManutencao.ascx.designer.cs">
+      <DependentUpon>menuAcoesManutencao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\menuAcoesSubManutencao.ascx.cs">
+      <DependentUpon>menuAcoesSubManutencao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menuAcoesSubManutencao.ascx.designer.cs">
+      <DependentUpon>menuAcoesSubManutencao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\menuCabecalhoPrincipal.ascx.cs">
+      <DependentUpon>menuCabecalhoPrincipal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menuCabecalhoPrincipal.ascx.designer.cs">
+      <DependentUpon>menuCabecalhoPrincipal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\menuEsquerdaPrincipal.ascx.cs">
+      <DependentUpon>menuEsquerdaPrincipal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menuEsquerdaPrincipal.ascx.designer.cs">
+      <DependentUpon>menuEsquerdaPrincipal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Agenda.aspx.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Agenda.aspx.designer.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\AreaProcessual.aspx.cs">
+      <DependentUpon>AreaProcessual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\AreaProcessual.aspx.designer.cs">
+      <DependentUpon>AreaProcessual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Atendimento.aspx.cs">
+      <DependentUpon>Atendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Atendimento.aspx.designer.cs">
+      <DependentUpon>Atendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Backup.aspx.cs">
+      <DependentUpon>Backup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Backup.aspx.designer.cs">
+      <DependentUpon>Backup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\CategoriaPeca.aspx.cs">
+      <DependentUpon>CategoriaPeca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\CategoriaPeca.aspx.designer.cs">
+      <DependentUpon>CategoriaPeca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Cidade.aspx.cs">
+      <DependentUpon>Cidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Cidade.aspx.designer.cs">
+      <DependentUpon>Cidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Comarca.aspx.cs">
+      <DependentUpon>Comarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Comarca.aspx.designer.cs">
+      <DependentUpon>Comarca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Estado.aspx.cs">
+      <DependentUpon>Estado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Estado.aspx.designer.cs">
+      <DependentUpon>Estado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\FaseProcessual.aspx.cs">
+      <DependentUpon>FaseProcessual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\FaseProcessual.aspx.designer.cs">
+      <DependentUpon>FaseProcessual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Instancia.aspx.cs">
+      <DependentUpon>Instancia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Instancia.aspx.designer.cs">
+      <DependentUpon>Instancia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Pessoa.aspx.cs">
+      <DependentUpon>Pessoa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Pessoa.aspx.designer.cs">
+      <DependentUpon>Pessoa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Processo.aspx.cs">
+      <DependentUpon>Processo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Processo.aspx.designer.cs">
+      <DependentUpon>Processo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\SituacaoProcesso.aspx.cs">
+      <DependentUpon>SituacaoProcesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\SituacaoProcesso.aspx.designer.cs">
+      <DependentUpon>SituacaoProcesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Tarefa.aspx.cs">
+      <DependentUpon>Tarefa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Tarefa.aspx.designer.cs">
+      <DependentUpon>Tarefa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\TipoAcao.aspx.cs">
+      <DependentUpon>TipoAcao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\TipoAcao.aspx.designer.cs">
+      <DependentUpon>TipoAcao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\TipoPrazoProcessual.aspx.cs">
+      <DependentUpon>TipoPrazoProcessual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\TipoPrazoProcessual.aspx.designer.cs">
+      <DependentUpon>TipoPrazoProcessual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Vara.aspx.cs">
+      <DependentUpon>Vara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cadastro\Vara.aspx.designer.cs">
+      <DependentUpon>Vara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\AgendaCompromisso.aspx.cs">
+      <DependentUpon>AgendaCompromisso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\AgendaCompromisso.aspx.designer.cs">
+      <DependentUpon>AgendaCompromisso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\AreaProcessual.aspx.cs">
+      <DependentUpon>AreaProcessual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\AreaProcessual.aspx.designer.cs">
+      <DependentUpon>AreaProcessual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Atendimento.aspx.cs">
+      <DependentUpon>Atendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Atendimento.aspx.designer.cs">
+      <DependentUpon>Atendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\BackupConfiguracaoFTP.aspx.cs">
+      <DependentUpon>BackupConfiguracaoFTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\BackupConfiguracaoFTP.aspx.designer.cs">
+      <DependentUpon>BackupConfiguracaoFTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\CategoriaPeca.aspx.cs">
+      <DependentUpon>CategoriaPeca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\CategoriaPeca.aspx.designer.cs">
+      <DependentUpon>CategoriaPeca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Cidade.aspx.cs">
+      <DependentUpon>Cidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Cidade.aspx.designer.cs">
+      <DependentUpon>Cidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Comarca.aspx.cs">
+      <DependentUpon>Comarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Comarca.aspx.designer.cs">
+      <DependentUpon>Comarca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Estado.aspx.cs">
+      <DependentUpon>Estado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Estado.aspx.designer.cs">
+      <DependentUpon>Estado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\FaseProcessual.aspx.cs">
+      <DependentUpon>FaseProcessual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\FaseProcessual.aspx.designer.cs">
+      <DependentUpon>FaseProcessual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Instancia.aspx.cs">
+      <DependentUpon>Instancia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Instancia.aspx.designer.cs">
+      <DependentUpon>Instancia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Pessoa.aspx.cs">
+      <DependentUpon>Pessoa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Pessoa.aspx.designer.cs">
+      <DependentUpon>Pessoa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\PessoaSocio.aspx.cs">
+      <DependentUpon>PessoaSocio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\PessoaSocio.aspx.designer.cs">
+      <DependentUpon>PessoaSocio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Processo.aspx.cs">
+      <DependentUpon>Processo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Processo.aspx.designer.cs">
+      <DependentUpon>Processo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoAdvogado.aspx.cs">
+      <DependentUpon>ProcessoAdvogado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoAdvogado.aspx.designer.cs">
+      <DependentUpon>ProcessoAdvogado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoAndamento.aspx.cs">
+      <DependentUpon>ProcessoAndamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoAndamento.aspx.designer.cs">
+      <DependentUpon>ProcessoAndamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoDespesa.aspx.cs">
+      <DependentUpon>ProcessoDespesa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoDespesa.aspx.designer.cs">
+      <DependentUpon>ProcessoDespesa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoParte.aspx.cs">
+      <DependentUpon>ProcessoParte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoParte.aspx.designer.cs">
+      <DependentUpon>ProcessoParte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoPeca.aspx.cs">
+      <DependentUpon>ProcessoPeca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoPeca.aspx.designer.cs">
+      <DependentUpon>ProcessoPeca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoPrazo.aspx.cs">
+      <DependentUpon>ProcessoPrazo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoPrazo.aspx.designer.cs">
+      <DependentUpon>ProcessoPrazo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoTerceiro.aspx.cs">
+      <DependentUpon>ProcessoTerceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\ProcessoTerceiro.aspx.designer.cs">
+      <DependentUpon>ProcessoTerceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\SituacaoProcesso.aspx.cs">
+      <DependentUpon>SituacaoProcesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\SituacaoProcesso.aspx.designer.cs">
+      <DependentUpon>SituacaoProcesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Tarefa.aspx.cs">
+      <DependentUpon>Tarefa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Tarefa.aspx.designer.cs">
+      <DependentUpon>Tarefa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\TipoAcao.aspx.cs">
+      <DependentUpon>TipoAcao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\TipoAcao.aspx.designer.cs">
+      <DependentUpon>TipoAcao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\TipoPrazoProcessual.aspx.cs">
+      <DependentUpon>TipoPrazoProcessual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\TipoPrazoProcessual.aspx.designer.cs">
+      <DependentUpon>TipoPrazoProcessual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Vara.aspx.cs">
+      <DependentUpon>Vara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Manutencao\Vara.aspx.designer.cs">
+      <DependentUpon>Vara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plesklib.aspx.cs">
+      <DependentUpon>plesklib.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plesklib.aspx.designer.cs">
+      <DependentUpon>plesklib.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CarregarRelatorio.aspx.cs">
+      <DependentUpon>CarregarRelatorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CarregarRelatorio.aspx.designer.cs">
+      <DependentUpon>CarregarRelatorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\InfoVillage\InfoVillage.CustomWebControls\InfoVillage.CustomWebControls.csproj">
+      <Project>{521c75fc-d40c-4550-bcff-ae23fad164f5}</Project>
+      <Name>InfoVillage.CustomWebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InfoVillage\InfoVillage.DevLibrary\InfoVillage.DevLibrary.csproj">
+      <Project>{06ba0cb1-4620-4421-aa15-fd8e4ba37b55}</Project>
+      <Name>InfoVillage.DevLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProJur.Business\ProJur.Business.csproj">
+      <Project>{50f343c6-b050-4b48-9feb-a7187fd1517d}</Project>
+      <Name>ProJur.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProJur.DataAccess\ProJur.DataAccess.csproj">
+      <Project>{9c427671-8c7e-423d-8105-0c8d26c310c9}</Project>
+      <Name>ProJur.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50962</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50925/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

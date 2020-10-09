@@ -1,0 +1,16 @@
+﻿
+.DetailsView
+{
+    
+}
+
+.DetailsView tr.Highlight
+{
+    background-color: #f6e5e3;
+}
+
+
+.teste {
+    border-style: solid;
+    border-width: 1px;
+}

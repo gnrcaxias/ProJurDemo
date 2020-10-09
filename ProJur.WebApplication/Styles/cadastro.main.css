@@ -1,0 +1,162 @@
+﻿
+@import url("gridview.css");
+
+#cadastroFiltros
+{
+    border-color: #BDBFC1;
+    float: left;
+    width: 700px;
+    height: 100px;
+    border-right-style: dotted;
+    border-right-width: 1px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+#cadastroFiltrosTitulo
+{
+    font-size: 10px; 
+    color:#727376;
+}
+
+#cadastroAcoesTitulo
+{
+    font-size: 10px; 
+    color:#727376;   
+}
+
+#cadastroAcoesListaItens
+{
+    margin-top: 10px;
+}
+
+#cadastroFiltrosCampos
+{
+    margin-top: 25px;
+}
+
+#cadastroFiltrosMaisOpcoesLink
+{
+    font-size: 10px;
+    color: #373435;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+#cadastroOpcoesPesquisa label.titulo
+{
+    font-size: 10px;
+    color: #373435;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+#cadastroOpcoesPesquisa label
+{
+    color: #373435;
+    margin-top: 5px;
+}
+
+#cadastroAcoes
+{
+    float: right;
+    width: 142px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+#cadastroOpcoesPesquisa
+{
+    padding: 15px;
+    border: 1px solid #BDBFC1;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 5px;
+    background-color: #F1F1F2;
+    display: none;
+}
+
+#cadastroCorpo
+{
+    padding-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-top-color: #BDBFC1;
+}
+
+#cadastroAcoesListaItens ul
+{
+    list-style-type: none;
+    padding: 0px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#cadastroAcoesListaItens ul li
+{
+    list-style-type: none;
+    padding-top: 4px;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+#cadastroCorpoTitulo
+{
+    font-size: 10px; 
+    color:#727376;
+}
+
+#cadastroCorpoResultado
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#cadastroCorpoResultado div#rodape
+{
+    padding: 5px;
+    margin: 5px;
+    line-height: 20px;
+}
+
+.rowAgenda
+{
+    color:  royalblue;
+}
+
+.rowPrazo
+{
+    color: firebrick;
+}
+
+.AutoExtender {
+    border: 1px solid #BBBBBB;
+    line-height: 28px;
+    background-color: #F1F1F2;
+}
+
+.AutoExtenderList {
+    border-bottom: dotted 1px #BDBFC1;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 3px;
+}
+
+.AutoExtenderHighlight {
+    
+    background-color: #f6e5e3;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 3px;
+    font-weight: bold;
+}
+
+input::placeholder {
+  color: #c2c1c1
+}

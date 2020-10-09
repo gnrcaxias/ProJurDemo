@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode title="ProJur">
+
+    <siteMapNode url="Default.aspx" title="Inicial" description="" />
+
+    <siteMapNode title="Gerenciador">
+
+      <siteMapNode url="Paginas/Cadastro/Menu.aspx" title="Menu" description="" />
+      <siteMapNode url="Paginas/Cadastro/Usuario.aspx" title="Usuário" description="" />
+
+      <siteMapNode title="Manutenção">
+        <siteMapNode url="Paginas/Manutencao/Menu.aspx" title="Menu" description="" />
+        <siteMapNode url="Paginas/Manutencao/Usuario.aspx" title="Usuário" description="" />
+      </siteMapNode>
+      
+    </siteMapNode>
+
+    <siteMapNode title="Cadastros">
+      <siteMapNode url="Paginas/Cadastro/AreaProcessual.aspx" title="Área Processual" description="" />
+      <siteMapNode url="Paginas/Cadastro/CategoriaPeca.aspx" title="Categoria de Peça Processual" description="" />
+      <siteMapNode url="Paginas/Cadastro/Cidade.aspx" title="Cidade" description="" />
+      <siteMapNode url="Paginas/Cadastro/Comarca.aspx" title="Comarca" description="" />
+      <siteMapNode url="Paginas/Cadastro/Estado.aspx" title="Estado" description="" />
+      <siteMapNode url="Paginas/Cadastro/FaseProcessual.aspx" title="Fase Processual" description="" />
+      <siteMapNode url="Paginas/Cadastro/Instancia.aspx" title="Instância" description="" />
+      <siteMapNode url="Paginas/Cadastro/TipoAcao.aspx" title="Tipo de Ação" description="" />
+      <siteMapNode url="Paginas/Cadastro/TipoPrazoProcessual.aspx" title="Tipo de Prazo Processual" description="" />
+      <siteMapNode url="Paginas/Cadastro/Vara.aspx" title="Vara" description="" />
+      <siteMapNode url="Paginas/Cadastro/SituacaoProcesso.aspx" title="Situação do Processo" description="" />
+
+      <siteMapNode title="Manutenção">
+        <siteMapNode url="Paginas/Manutencao/AreaProcessual.aspx" title="Área Processual" description="" />
+        <siteMapNode url="Paginas/Manutencao/CategoriaPeca.aspx" title="Categoria de Peça Processual" description="" />
+        <siteMapNode url="Paginas/Manutencao/Cidade.aspx" title="Cidade" description="" />
+        <siteMapNode url="Paginas/Manutencao/Comarca.aspx" title="Comarca" description="" />
+        <siteMapNode url="Paginas/Manutencao/Estado.aspx" title="Estado" description="" />
+        <siteMapNode url="Paginas/Manutencao/FaseProcessual.aspx" title="Fase Processual" description="" />
+        <siteMapNode url="Paginas/Manutencao/Instancia.aspx" title="Instância" description="" />
+        <siteMapNode url="Paginas/Manutencao/TipoAcao.aspx" title="Tipo de Ação" description="" />
+        <siteMapNode url="Paginas/Manutencao/TipoPrazoProcessual.aspx" title="Tipo de Prazo Processual" description="" />
+        <siteMapNode url="Paginas/Manutencao/Vara.aspx" title="Vara" description="" />
+        <siteMapNode url="Paginas/Manutencao/SituacaoProcesso.aspx" title="Situação do Processo" description="" />        
+      </siteMapNode>
+  </siteMapNode>
+
+    <siteMapNode title="Operacional">
+      <siteMapNode url="Paginas/Cadastro/Pessoa.aspx" title="Pessoa" description="" />
+      <siteMapNode url="Paginas/Cadastro/Agenda.aspx" title="Agenda" description="" />
+      <siteMapNode url="Paginas/Cadastro/Processo.aspx" title="Processo" description="" />
+      <siteMapNode url="Paginas/Cadastro/Tarefa.aspx" title="Tarefa" description="" />
+
+      <siteMapNode title="Manutenção">
+        <siteMapNode url="Paginas/Manutencao/Pessoa.aspx" title="Pessoa" description="" />
+        <siteMapNode url="Paginas/Manutencao/AgendaCompromisso.aspx" title="Agenda - Compromisso" description="" />
+        <siteMapNode url="Paginas/Manutencao/Processo.aspx" title="Processo" description="" />
+        <siteMapNode url="Paginas/Manutencao/Tarefa.aspx" title="Tarefa" description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="CRM">
+      <siteMapNode url="Paginas/Cadastro/Atendimento.aspx" title="Atendimento" description="" />
+      
+      <siteMapNode title="Manutenção">
+        <siteMapNode url="Paginas/Manutencao/Atendimento.aspx" title="Atendimento" description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Processo">
+      <siteMapNode url="Paginas/Manutencao/ProcessoAdvogado.aspx" title="Advogado Parte" description="" />
+      <siteMapNode url="Paginas/Manutencao/ProcessoAndamento.aspx" title="Andamento" description="" />
+      <siteMapNode url="Paginas/Manutencao/ProcessoApenso.aspx" title="Apenss" description="" />
+      <siteMapNode url="Paginas/Manutencao/ProcessoDespesa.aspx" title="Despesa" description="" />
+      <siteMapNode url="Paginas/Manutencao/ProcessoParte.aspx" title="Parte" description="" />
+      <siteMapNode url="Paginas/Manutencao/ProcessoPeca.aspx" title="Peça" description="" />
+      <siteMapNode url="Paginas/Manutencao/ProcessoPrazo.aspx" title="Prazo" description="" />
+      <siteMapNode url="Paginas/Manutencao/ProcessoTerceiro.aspx" title="Terceiro" description="" />
+    </siteMapNode>
+    
+    <siteMapNode title="Pessoa Jurídica">
+      <siteMapNode url="Paginas/Manutencao/PessoaSocio.aspx" title="Sócio" description="" />
+    </siteMapNode>
+
+  </siteMapNode>
+
+</siteMap>

@@ -1,0 +1,160 @@
+﻿*
+{
+    font-family: Verdana;
+}
+
+
+body
+{
+    padding: 0px;
+    margin: 0px;    
+    font-family: Verdana;
+    font-size: 11px;
+    color: #373435;
+    background: url(../Images/rca-marca-dagua.png);
+    background-size: 950px 823px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: -90px 20px;
+}
+
+a
+{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:visited
+{
+    color: inherit;
+}
+
+a:active
+{
+    color: inherit;
+}
+
+.campoTextoIdle {
+    border: 1px solid #BBBBBB;
+    border-radius: 5px 5px 5px 5px;
+    height: 23px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.campoTextoFocus
+{
+    border: 1px solid #8F9194;
+    border-radius: 3px 3px 3px 3px;
+    height: 23px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #f6e5e3;
+}
+
+.dropDownIdle
+{
+    border: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    height: 27px;
+    padding: 5px; 
+}
+
+.dropDownFocus
+{
+    border: 1px solid #8F9194;
+    border-radius: 3px 3px 3px 3px;
+    height: 27px;
+    padding: 5px;
+    background-color: #f6e5e3;
+}
+
+.botao
+{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #727376;
+    font-size: 10px;
+    background-color: #faf3f2;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.botao:hover
+{
+    background-color: #ffe8e8;
+}
+
+.botaoPadrao
+{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #3d546c;
+    font-size: 11px;
+    background-color: #a55852;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+}
+
+.botaoPadrao:hover
+{
+    background-color: #c8928f;
+    color: #000000;
+}
+
+.ErroValidacao
+{
+    color: red;
+    font-weight: bold;
+}
+
+.ErroValidacaoSummary
+{
+    padding: 15px;
+    color: #ED3237;
+    background: #FFEBE8 url('/Images/avisored.gif') no-repeat 1px 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-top-color: #D17376;
+    border-bottom-color: #D17376;
+}
+
+.ErroValidacaoSummaryCabecalho
+{
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    padding-left: 60px;   
+}
+
+.ErroValidacaoSummary ul 
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 80px;
+    list-style: square;
+}
+
+.ErroValidacaoSummaryDialog
+{
+    padding: 15px;
+    color: #ED3237;
+    background: #FFEBE8;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-top-color: #D17376;
+    border-bottom-color: #D17376;
+}
+
+.ErroValidacaoSummaryDialog ul 
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    list-style: square;
+}
